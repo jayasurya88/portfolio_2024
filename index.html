@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jayasurya Sudhakaran - Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts - Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Jayasurya</a>
+            <button class="navbar-toggler cross" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="#about">About</a>
+                    <a class="nav-item nav-link" href="#projects">Projects</a>
+                    <a class="nav-item nav-link" href="#blog">Blog</a>
+                    <a class="nav-item nav-link" href="#contact">Contact</a>
+                    <!-- <button class="btn btn-secondary ml-3 theme-toggle-btn" id="theme-toggle-btn">Toggle Theme</button> -->
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/image/WhatsApp Image 2024-06-13 at 08.40.50_695b495c.jpg" alt="Jayasurya profile picture"
+                class="profile-pic" />
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Jayasurya</h1>
+            <div class="btn-container">
+                <button class="btn" style="background-color: rgb(90, 90, 90);"
+                    onclick="window.open('./assets/jayasurya.pdf')">Download CV</button>
+                <button class="btn btn-secondary" onclick="location.href='./#contact'">Contact Info</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/image/linkedin.png" alt="My LinkedIn profile" class="icon"
+                    onclick="location.href='https://www.linkedin.com/in/jayasurya-sudhakaran-b980b2244/'" />
+                <img src="./assets/image/github.png" alt="My Github profile" class="icon"
+                    onclick="location.href='https://github.com/'" />
+                <img src="./assets/image/email.png" alt="Email" class="icon" onclick="location.href=''" />
+            </div>
+        </div>
+    </section>
+    <section id="about" class="section-gap">
+        <div class="section-container">
+            <h1 class="title">About Me</h1>
+            <div class="about-details-container">
+                <div class="text-container">
+                    <p>
+                        <b>Personal Background :</b><br><br>
+                        I am Jayasurya Sudhakaran, a motivated and ambitious individual with a keen interest in cloud technologies and web development. My journey began with a Bachelor's degree in Computer Application from MG University, where I honed my skills in programming and developed a passion for solving complex problems. Eager to explore new horizons, I am currently pursuing an MCA to deepen my expertise and pursue a career in cloud-related roles.
+                        <br><br>
+                        <b>Academic Background:</b><br><br>
+                        I graduated with a Bachelor's degree in Computer Application from MG University, where I gained a solid foundation in programming languages such as JAVA, Python, and C++, as well as web development using Django. My coursework included advanced topics in database management with MySQL, which enhanced my ability to design robust and scalable solutions.
+                    </p>
+                </div>
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/image/experience.png" alt="Experience icon" class="icon" />
+                        <h3>Certificates</h3>
+                        <p>META FRONT END DEVELOPMENT<br />IBM: Python for Data Science, AI & Development.<br>Data
+                            Analytics and Visualization Job Simulation - Accenture</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/image/education.png" alt="Education icon" class="icon" />
+                        <h3>Education</h3>
+                        <p>Bachelor in Computer Application Degree<br> <i>- MAC Rampuram</i></p>
+                    </div>
+                </div>
+                <div class="skills-container" style="text-align: center;">
+                    <h3 style="text-align: center;margin: 20px;">Skills</h3>
+                    <div class="skill-box">C</div>
+                    <div class="skill-box">C++</div>
+                    <div class="skill-box">JAVA</div>
+                    <div class="skill-box">Python</div>
+                    <div class="skill-box">MySQL</div>
+                    <div class="skill-box">REACT JS</div>
+                    <div class="skill-box">Django</div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <br><br><br><br><br> <br><br><br><br><br> <br><br><br>
+    <section id="projects" class="section-gap">
+        <h2>Projects</h2>
+    <div class="project-card">
+        <div class="project-image">
+            <img src="assets/image/Screenshot 2024-07-17 150239.png"
+                alt="Warehouse Management System Project Screenshot">
+        </div>
+        <div class="project-content">
+            <h3>Warehouse Management System</h3>
+            <p>Developed a responsive warehouse management system using Django and Python, enabling efficient
+                inventory tracking, order management, and reporting for warehouse operations.</p>
+            <p>Technologies used: Bootstrap, HTML, CSS, Django, Python.</p>
+            <a href="https://jayasurya88.pythonanywhere.com/" target="_blank" class="btn btn-primary">Demo</a>
+            <a href="https://github.com/jayasurya88/warehouse-management-system.git" target="_blank"
+                class="btn btn-primary">Code Repository</a>
+            <button class="btn btn-secondary" onclick="toggleDetails('details1')">Read More</button>
+            <div id="details1" class="project-details" style="display: none;">
+                <p>The Warehouse Management System streamlines warehouse operations by providing tools for inventory
+                    tracking, order management, and real-time reporting. Users can view stock levels, track
+                    shipments, and generate performance reports.</p>
+                <p><strong>Features:</strong></p>
+                <ul>
+                    <li>Real-time inventory tracking and updates.</li>
+                    <li>Order management system for processing and tracking orders.</li>
+                    <li>Detailed reporting and analytics for warehouse performance.</li>
+                    <li>Responsive design for optimal viewing on all devices.</li>
+                    <li>User authentication and role-based access control.</li>
+                </ul>
+                <p>The system is a comprehensive solution consisting of three modules: Admin, Client, and Delivery Management. It streamlines inventory control, purchase, and shipping processes. Admins can add products and monitor orders, clients can purchase products, track shipments, and confirm deliveries, while the delivery module updates shipping progress. This system enhances efficiency, transparency, and customer satisfaction in warehouse operations.</p>
+            </div>
+        </div>
+    </div>
+
+        <div class="project-card">
+            <div class="project-image">
+                <img src="assets/image/jobportal.png" alt="Job Portal Project Screenshot">
+            </div>
+            <div class="project-content">
+                <h3>1: Job Portal</h3>
+                <p>Developed a comprehensive job portal for job seekers and recruiters, implementing a user-friendly
+                    interface and robust backend functionality.</p>
+                <p>Technologies used include Python, Django, HTML, CSS, and JavaScript.</p>
+                <a href="https://github.com/jayasurya88/Jobportal--Django.git" target="_blank"
+                    class="btn btn-primary">Code Repository</a>
+                <button class="btn btn-secondary" onclick="toggleDetails('details2')">Read More</button>
+                <div id="details2" class="project-details">
+                    <p>The job portal features profiles, resume uploads, and job search capabilities for job seekers,
+                        and allows recruiters to post job openings, search for candidates, and manage applications. It
+                        includes authentication, notifications, and an admin dashboard for comprehensive user and
+                        posting management. Additionally, it supports real-time updates and ensures data security and
+                        privacy.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-image">
+                <img src="assets/image/Reddit-Logo.wine.png" alt="Command Analyzer Project Screenshot">
+            </div>
+            <div class="project-content">
+                <h3>3: Command Analyzer</h3>
+                <p>Developed a Python script for analyzing sentiment in Reddit post comments using the Vader sentiment
+                    analysis tool and the PRAW library for Reddit API interaction.</p>
+                <p>Technologies used include Python, Vader Sentiment Analysis, PRAW (Python Reddit API Wrapper).</p>
+                <a href="https://github.com/jayasurya88/Reddit-post-analyzer.git" target="_blank"
+                    class="btn btn-primary">Code Repository</a>
+                <button class="btn btn-secondary" onclick="toggleDetails('details3')">Read More</button>
+                <div id="details3" class="project-details">
+                    <p>The Command Analyzer script processes Reddit post comments, categorizing them into positive,
+                        negative, or neutral sentiments based on text analysis. It fetches comments from a specified
+                        Reddit post URL, applies sentiment analysis using Vader, and outputs categorized comments.</p>
+                    <p><strong>Features:</strong></p>
+                    <ul>
+                        <li>Uses Vader sentiment analysis for sentiment categorization.</li>
+                        <li>Interacts with Reddit API via PRAW to fetch and analyze comments.</li>
+                        <li>Provides categorized output of comments as positive, negative, or neutral.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-image">
+                <img src="assets/image/realestate.png" alt="Real Estate Website Project Screenshot">
+            </div>
+            <div class="project-content">
+                <h3>Real Estate Website</h3>
+                <p>Developed a responsive real estate website using React.js, offering users an engaging experience
+                    for browsing and viewing property details.</p>
+                <p>Technologies used include React.js, Redux, and Bootstrap for front-end development.</p>
+                <a href="https://jsrealestate.pages.dev/" target="_blank" class="btn ">Demo</a>
+                
+                <div id="details4" class="project-details" style="display: none;">
+                    <p>The Real Estate Website provides a comprehensive platform for users to explore properties. It includes
+                        features such as an interactive map for property locations and detailed property pages.</p>
+                    <p><strong>Features:</strong></p>
+                    <ul>
+                        <li>Responsive design for optimal viewing on all devices.</li>
+                        
+                        <li>Detailed property pages with high-quality images and descriptions.</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<section id="blog" class="section-gap">
+    <h2>Technical Articles</h2>
+    <div class="blog-post">
+        <h3>Understanding Cloud Computing</h3>
+        <p class="blog-content">Cloud computing is transforming the way we think about IT infrastructure. <span class="more-text">Cloud computing is the act of running workloads within clouds—which are IT environments that abstract, pool, and share scalable resources across a network. Neither cloud computing nor clouds are technologies unto themselves.
+
+            Cloud computing is an act—the function of running a workload in a cloud.
+            Clouds are environments—places where applications run.
+            Technologies are things—software and hardware used to build and use clouds.
+        
+        </span></p>
+        <button class="read-more-btn">Read More</button>
+    </div>
+    <div class="blog-post">
+        <h3>Building a Django Web Application</h3>
+        <p class="blog-content">Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design. <span class="more-text">Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design. Created by experienced developers, it takes care of much of the hassle of web development, allowing developers to focus on writing their applications without needing to reinvent the wheel. Here are some key features:
+
+            Fast Development: Django is designed to help developers take applications from concept to completion as quickly as possible.
+            Reusability: It emphasizes reusability of components and adheres to the DRY (Don't Repeat Yourself) principle.
+            Scalability: Django is scalable and can handle the heaviest traffic demands.
+            Security: Django includes security features to help developers avoid common security mistakes, such as SQL injection, cross-site scripting, and cross-site request forgery.
+            Versatility: It can be used for both simple and complex projects and is well-suited for database-driven websites.
+            By using Django, developers can create robust and efficient web applications with minimal effort, leveraging its built-in tools and libraries for common tasks like user authentication, content administration, and database interaction.</span></p>
+        <button class="read-more-btn">Read More</button>
+    </div>
+    <div class="blog-post">
+        <h3>The Basics of Artificial Intelligence</h3>
+        <p class="blog-content">Artificial Intelligence (AI) is one of the most transformative technologies of our time. <span class="more-text">This article explores the fundamental concepts of AI, including machine learning, neural networks, and real-world applications. We will discuss the different types of machine learning, such as supervised, unsupervised, and reinforcement learning, and how AI is used in various domains like healthcare, finance, and autonomous vehicles. Practical examples and case studies will be included to illustrate AI's impact and potential. We will also cover advanced topics like deep learning, convolutional neural networks (CNNs) for image recognition, natural language processing (NLP) for text analysis, and generative adversarial networks (GANs) for creating synthetic data. The ethical considerations and future trends in AI will also be discussed to provide a comprehensive overview of the field.</span></p>
+        <button class="read-more-btn">Read More</button>
+    </div>
+</section>
+<br><br><br><br><br>
+<!-- Contact Me Section -->
+<section id="contact" class="section-gap">
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <h2 class="mb-4 text-center">Contact Me</h2>
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="b2fa9d8b-8d45-4df8-abff-970b78cce32e">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="bg-dark text-white py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <h4 class="mb-3">About Me</h4>
+          <p class="mb-0">Thank you for visiting my portfolio. If you have any questions or want to connect, feel free to reach out.</p>
+        </div>
+        <div class="col-md-6 mb-3">
+          <h4 class="mb-3">Quick Links</h4>
+          <ul class="list-unstyled">
+            <li><a href="#home" class="text-white">Home</a></li>
+            <li><a href="#about" class="text-white">About</a></li>
+            <li><a href="#projects" class="text-white">Projects</a></li>
+            <li><a href="#contact" class="text-white">Contact</a></li>
+            <li><a href="https://www.linkedin.com/in/jayasurya-sudhakaran-b980b2244/">LinkedIn</a></li>
+            <li><a href="https://www.instagram.com/jayasurya_88/?utm_source=ig_web_button_share_sheet">Instagram</a></li>
+            <li><a href="https://github.com/jayasurya88">Github</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 text-center">
+          <div class="social-links mb-3">
+            <a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="text-white me-3"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/yourusername" target="_blank" class="text-white me-3"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com/yourusername" target="_blank" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/yourusername" target="_blank" class="text-white"><i class="fab fa-instagram"></i></a>
+          </div>
+          <p class="mb-0">© 2024 Jayasurya Sudhakaran. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        function toggleDetails(id) {
+            document.querySelectorAll('.project-details').forEach(details => {
+                if (details.id !== id) {
+                    details.style.display = 'none';
+                }
+            });
+    
+            const details = document.getElementById(id);
+            if (details.style.display === 'none' || details.style.display === '') {
+                details.style.display = 'block';
+            } else {
+                details.style.display = 'none';
+            }
+        }
+    
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelectorAll('.read-more-btn').forEach(button => {
+                button.addEventListener('click', function () {
+                    document.querySelectorAll('.more-text').forEach(text => {
+                        text.style.display = 'none';
+                    });
+    
+                    document.querySelectorAll('.read-more-btn').forEach(btn => {
+                        btn.textContent = 'Read More';
+                    });
+    
+                    const moreText = this.previousElementSibling.querySelector('.more-text');
+                    if (moreText.style.display === 'none' || moreText.style.display === '') {
+                        moreText.style.display = 'inline';
+                        this.textContent = 'Read Less';
+                    } else {
+                        moreText.style.display = 'none';
+                        this.textContent = 'Read More';
+                    }
+                });
+            });
+    
+            const themeToggleBtn = document.getElementById('theme-toggle-btn');
+            if (themeToggleBtn) {
+                themeToggleBtn.addEventListener('click', () => {
+                    document.body.classList.toggle('dark-theme');
+                    const currentTheme = document.body.classList.contains('dark-theme') ? 'dark' : 'light';
+                    localStorage.setItem('theme', currentTheme);
+                    updateThemeToggleText();
+                });
+    
+                function updateThemeToggleText() {
+                    const currentTheme = document.body.classList.contains('dark-theme') ? 'Dark Mode' : 'Light Mode';
+                    themeToggleBtn.textContent = `Toggle ${currentTheme}`;
+                }
+    
+                const savedTheme = localStorage.getItem('theme');
+                if (savedTheme === 'dark') {
+                    document.body.classList.add('dark-theme');
+                }
+                updateThemeToggleText();
+            }
+        });
+    </script>
+</body>
+
+</html>
